@@ -36,6 +36,12 @@ jobs:
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      # Debug: List files in the current directory
+      - name: Debug file access
+        run: |
+          echo "Listing files in the directory..."
+          ls -l
+
       # Lint code with flake8
       - name: Lint with flake8
         run: |
