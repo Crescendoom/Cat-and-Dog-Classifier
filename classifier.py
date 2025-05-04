@@ -1,10 +1,11 @@
+import os
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tkinter import filedialog, Tk
 from tensorflow.keras.models import load_model # type: ignore
 
-model = load_model("catAndDog_BinaryClassifier.keras")
+model = load_model(os.path.join("D:\\Cat-and-Dog-Classifier-main", "catAndDog_BinaryClassifier.keras"))
 target_size = (224, 224)
 
 def predict_image():
@@ -31,3 +32,5 @@ def predict_image():
 
 if __name__ == "__main__":
     predict_image()
+
+print("Current working directory:", os.getcwd())
