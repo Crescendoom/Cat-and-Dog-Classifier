@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from tkinter import filedialog, Tk
 from tensorflow.keras.models import load_model
 
-# Load the trained model
 model = load_model("catAndDog_BinaryClassifier.keras")
 target_size = (224, 224)
 
