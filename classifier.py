@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from tkinter import filedialog, Tk
 from tensorflow.keras.models import load_model # type: ignore
 
-model = load_model("catAndDog_BinaryClassifier.keras")
+model = load_model("path/to/catAndDog_BinaryClassifier.keras")
 target_size = (224, 224)
 
 def predict_image():
