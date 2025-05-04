@@ -17,3 +17,6 @@ Run the classifier: `python classifier.py`
 ## Dataset
 
 Download the cats and dogs dataset from [Kaggle](https://www.kaggle.com/code/robikscube/working-with-image-data-in-python/input) and place in the Dataset folder.
+
+##
+I need help on turning this into an exe file. lol
