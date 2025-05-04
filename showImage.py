@@ -1,3 +1,4 @@
+# Code block for showing of image
 import pandas as pd
 import os
 from glob import glob
@@ -25,6 +26,7 @@ def showCatImage(cat_files):
 def showPixelValuesOfCatImage():
     pd.Series(img_mpl.flatten()).plot(kind='hist', bins=50, title='Distribution of Pixel Values')
     plt.show()
-    
+
+# UNCOMMENT THIS IF YOU WANT TO RUN
 # showCatImage(cat_files)
 # showPixelValuesOfCatImage()
