@@ -5,12 +5,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.applications import MobileNetV2
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.preprocessing.image import ImageDataGenerator # type: ignore
+from tensorflow.keras.applications import MobileNetV2 # type: ignore
+from tensorflow.keras.models import Model # type: ignore
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout # type: ignore
+from tensorflow.keras.optimizers import Adam # type: ignore
+from tensorflow.keras.callbacks import EarlyStopping # type: ignore
 from glob import glob
 # from google.colab import drive
 # from google.colab import files
@@ -93,9 +93,9 @@ history = model.fit(
 # plt.legend()
 # plt.show()
 
-model.save("catAndDog_BinaryClassifier.keras")
+# model.save("catAndDog_BinaryClassifier.keras")
 
-model.save_weights("model_weights.h5")
+# model.save_weights("model_weights.h5")
 
-model = create_model()
-model.load_weights("model_weights.h5")
+# model = create_model()
+# model.load_weights("model_weights.h5")
