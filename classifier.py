@@ -2,7 +2,11 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tkinter import filedialog, Tk
+<<<<<<< HEAD
 from tensorflow.keras.models import load_model # type: ignore
+=======
+from tensorflow.keras.models import load_model
+>>>>>>> 740027217e31e3edb8fe06c10fc0d6329b2c96dd
 
 model = load_model("catAndDog_BinaryClassifier.keras")
 target_size = (224, 224)

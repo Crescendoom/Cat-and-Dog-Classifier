@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Virtual Environment
 .venv/
 __pycache__/
@@ -14,3 +15,21 @@ __pycache__/
 # OS specific files
 .DS_Store
 Thumbs.db
+=======
+# Virtual Environment
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+>>>>>>> 740027217e31e3edb8fe06c10fc0d6329b2c96dd
