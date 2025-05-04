@@ -3,9 +3,12 @@ import os
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
-from classifier import model, target_size
+from tensorflow.keras.models import load_model  # type: ignore
+from classifier import target_size
 import shutil
 
+model_path = os.path.join(os.path.dirname(__file__), "catAndDog_BinaryClassifier.keras")
+model = load_model(model_path)
 class TestClassifierWithRealImages(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
