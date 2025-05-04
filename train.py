@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# Here's the code I used if you want to train your own model
 import os
 import cv2
 import matplotlib.pyplot as plt
@@ -20,18 +20,12 @@ plt.style.use('ggplot')
 # Mount Google Drive
 # drive.mount('/content/drive')
 
-base_dir = "./Dataset/dogCatBinaliktad"
+base_dir = "/your-directory"
 train_dir = os.path.join(base_dir, "training_set")
 val_dir = os.path.join(base_dir, "validation_set")
 
 cat_files = glob(os.path.join(train_dir, "cats", "*.jpg"))
 dog_files = glob(os.path.join(train_dir, "dogs", "*.jpg"))
-
-# img_mpl = plt.imread(cat_files[11])
-# img_cv2 = cv2.imread(cat_files[11])
-# img_mpl.shape, img_cv2.shape
-# pd.Series(img_mpl.flatten()).plot(kind='hist', bins=50, title='Distribution of Pixel Values')
-# plt.show()
 
 target_size = (224, 224)
 
@@ -82,6 +76,7 @@ history = model.fit(
     epochs=10,
     callbacks=[early_stop])
 
+# PLOT THE ACCURACY AND LOSS OF YOUR TRAINING
 # plt.plot(history.history['accuracy'], label='Train Accuracy')
 # plt.plot(history.history['val_accuracy'], label='Val Accuracy')
 # plt.title('Model Accuracy')
