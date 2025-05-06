@@ -48,7 +48,7 @@ Run the automated tests to verify the classifier works correctly:
     python -m unittest 
     
 ## Project Structure
-classifier.py - Main script for classifying images
+classifier.py - Main script for classifying images 
 train.py - Script for training the model
 test_classifier.py - Unit tests
 requirements.txt - Python dependencies
