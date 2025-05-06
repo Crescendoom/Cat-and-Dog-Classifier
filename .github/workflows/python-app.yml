@@ -66,17 +66,20 @@ jobs:
           echo "model.save('catAndDog_BinaryClassifier.keras')" >> create_test_model.py
           python create_test_model.py
 
+      # Install ImageMagick for generating placeholder images
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       # Add sample test images with more reliable sources
       - name: Add sample test images
         run: |
           mkdir -p test_set/cats test_set/dogs
           
-          # Use GitHub-hosted images with multiple fallbacks for cats
+          # Generate placeholder images if downloading fails
           wget -O test_set/cats/sample_cat.jpg "https://raw.githubusercontent.com/tensorflow/examples/master/lite/examples/image_classification/android/app/src/main/assets/cat.jpg" || \
           wget -O test_set/cats/sample_cat.jpg "https://github.com/google-research/vision_transformer/raw/main/cat.jpg" || \
           convert -size 224x224 xc:white -draw "circle 112,112 112,12" -fill black -draw "circle 80,80 85,85" -draw "circle 150,80 155,85" -pointsize 0 test_set/cats/sample_cat.jpg
           
-          # Use GitHub-hosted images with multiple fallbacks for dogs
           wget -O test_set/dogs/sample_dog.jpg "https://raw.githubusercontent.com/tensorflow/examples/master/lite/examples/object_detection/android/app/src/main/assets/dog.jpg" || \
           wget -O test_set/dogs/sample_dog.jpg "https://raw.githubusercontent.com/tensorflow/models/master/research/object_detection/test_images/image2.jpg" || \
           convert -size 224x224 xc:white -draw "rectangle 50,50 170,170" -pointsize 0 test_set/dogs/sample_dog.jpg
