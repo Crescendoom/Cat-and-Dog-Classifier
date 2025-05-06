@@ -14,8 +14,8 @@ A deep learning model that classifies images as either cats or dogs using Tensor
 1. Clone this repository
 2. Create a virtual environment: python -m venv .venv
 3. Activate the environment:
-    Windows: activate
-    Linux/Mac: source .venv/bin/activate
+    - Windows: activate
+    - Linux/Mac: source .venv/bin/activate
 4. Install dependencies: pip install -r requirements.txt
 5. Download the dataset (instructions below)
 
