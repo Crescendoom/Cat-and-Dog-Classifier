@@ -22,9 +22,13 @@ A deep learning model that classifies images as either cats or dogs using Tensor
 ## Dataset 
 
 Download the cats and dogs dataset from Kaggle and organize it as follows:
-- Dataset/ >> training_set/, validation_set/ 
-    - training_set/ >> cats, dogs
-    - validation_set/ >> cats, dogs
+- Dataset/
+    - training_set/
+        - cats/ # ~4,000 cat images
+        - dogs/ # ~4,000 cat images
+    - validation_set/
+        - cats  # ~1,000 cat images
+        - dogs  # ~1,000 dog images
 
 ## Usage
 
