@@ -23,13 +23,13 @@ A deep learning model that classifies images as either cats or dogs using Tensor
 
 Download the cats and dogs dataset from Kaggle and organize it as follows:
 - Dataset/ >> training_set/, validation_set/ 
-- training_set/ >> cats, dogs
-- validation_set/ >> cats, dogs
+    - training_set/ >> cats, dogs
+    - validation_set/ >> cats, dogs
 
 ## Usage
 
 1. First, train the model (if not already trained): python train.py 
- - This creates the catAndDog_BinaryClassifier.keras file.
+    - This creates the catAndDog_BinaryClassifier.keras file.
 
 2. Run the classifier: python classifier.py
 
