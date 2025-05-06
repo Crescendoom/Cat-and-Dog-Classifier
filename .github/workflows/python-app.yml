@@ -23,6 +23,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # Set environment variable to reduce TensorFlow warnings
+      - name: Set environment variable
+        run: echo "TF_CPP_MIN_LOG_LEVEL=2" >> $GITHUB_ENV
+
       # Set up Python environment
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
@@ -36,11 +40,27 @@ jobs:
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      # Install TensorRT libraries (optional, if needed)
+      - name: Install TensorRT libraries
+        run: sudo apt-get install -y libnvinfer7 libnvinfer-plugin7
+
       # Debug: List files in the current directory
       - name: Debug file access
         run: |
           echo "Listing files in the directory..."
           ls -l
+
+      # Download model file
+      - name: Download model file
+        run: |
+          wget -O catAndDog_BinaryClassifier.keras <model-file-url>
+
+      # Add sample test images
+      - name: Add sample test images
+        run: |
+          mkdir -p test_set/cats test_set/dogs
+          wget -O test_set/cats/sample_cat.jpg <cat-image-url>
+          wget -O test_set/dogs/sample_dog.jpg <dog-image-url>
 
       # Lint code with flake8
       - name: Lint with flake8
