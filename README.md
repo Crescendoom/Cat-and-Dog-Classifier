@@ -2,21 +2,57 @@
 
 A deep learning model that classifies images as either cats or dogs using TensorFlow and MobileNetV2.
 
+## Requirements
+
+Python 3.9 or 3.10
+TensorFlow 2.10.0
+Numpy, Matplotlib, Pillow
+See requirements.txt for all dependencies
+
 ## Setup
 
 1. Clone this repository
-2. Create a virtual environment: `python -m venv .venv`
-3. Activate the environment: `.venv\Scripts\activate`
-4. Install dependencies: `pip install -r requirements.txt`
-5. Download the dataset (instructions below)
+2. Create a virtual environment: python -m venv .venv
+3. Activate the environment:
+    Windows: activate
+    Linux/Mac: source .venv/bin/activate
+4. Install dependencies: pip install -r requirements.txt
+5. Download the dataset (instructions below)r.py`
+
+## Dataset 
+
+Download the cats and dogs dataset from Kaggle and organize it as follows:
+Dataset/
+  training_set/
+    cats/      # ~4,000 cat images
+    dogs/      # ~4,000 dog images
+  validation_set/
+    cats/      # ~1,000 cat images
+    dogs/      # ~1,000 dog images
 
 ## Usage
 
-Run the classifier: `python classifier.py`
+1. First, train the model (if not already trained):
+    python train.py
 
-## Dataset
+This creates the catAndDog_BinaryClassifier.keras file.
 
-Download the cats and dogs dataset from [Kaggle](https://www.kaggle.com/code/robikscube/working-with-image-data-in-python/input) and place in the Dataset folder.
+2. Run the classifier:
+    python classifier.py
+
+3. Select an image when prompted, and the classifier will display its prediction.
+
+## Testing
+
+Run the automated tests to verify the classifier works correctly:
+    python -m unittest 
+    
+## Project Structure
+classifier.py - Main script for classifying images
+train.py - Script for training the model
+test_classifier.py - Unit tests
+requirements.txt - Python dependencies
+catAndDog_BinaryClassifier.keras - Pre-trained model file
 
 ##
 I need help on turning this into an exe file. lol
