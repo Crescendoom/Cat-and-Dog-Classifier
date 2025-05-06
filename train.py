@@ -20,7 +20,7 @@ plt.style.use('ggplot')
 # Mount Google Drive
 # drive.mount('/content/drive')
 
-base_dir = "/your-directory"
+base_dir = "Dataset"
 train_dir = os.path.join(base_dir, "training_set")
 val_dir = os.path.join(base_dir, "validation_set")
 
@@ -42,14 +42,14 @@ train_datagen = ImageDataGenerator(
 val_datagen = ImageDataGenerator(rescale=1./255)
 
 train_generator = train_datagen.flow_from_directory(
-    'train_dir',
+    train_dir,
     target_size=target_size,
     batch_size=32,
     class_mode='binary'
 )
 
 val_generator = val_datagen.flow_from_directory(
-    'val_dir',
+    val_dir,
     target_size=target_size,
     batch_size=32,
     class_mode='binary'
@@ -93,7 +93,7 @@ history = model.fit(
 # plt.legend()
 # plt.show()
 
-# model.save("catAndDog_BinaryClassifier.keras")
+model.save("catAndDog_BinaryClassifier.keras")
 
 # model.save_weights("model_weights.h5")
 
