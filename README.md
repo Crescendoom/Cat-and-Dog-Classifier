@@ -17,12 +17,14 @@ See requirements.txt for all dependencies
     Windows: activate
     Linux/Mac: source .venv/bin/activate
 4. Install dependencies: pip install -r requirements.txt
-5. Download the dataset (instructions below)r.py`
+5. Download the dataset (instructions below)
 
 ## Dataset 
 
 Download the cats and dogs dataset from Kaggle and organize it as follows:
-Dataset/ training_set/ cats/ # ~4,000 cat images dogs/ # ~4,000 dog images validation_set/ cats/ # ~1,000 cat images dogs/ # ~1,000 dog images
+- Dataset/ >> training_set/, validation_set/ 
+- training_set/ >> cats, dogs
+- validation_set/ >> cats, dogs
 
 ## Usage
 
@@ -44,6 +46,6 @@ Run the automated tests to verify the classifier works correctly: python -m unit
  - requirements.txt - Python dependencies
  - catAndDog_BinaryClassifier.keras - Pre-trained model file
 
-##
-I need help on turning this into an exe file. lol
+## Future Work
+Create an executable file for easier distribution
 
