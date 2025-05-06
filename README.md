@@ -7,7 +7,7 @@ A deep learning model that classifies images as either cats or dogs using Tensor
 - Python 3.9 or 3.10
 - TensorFlow 2.10.0
 - Numpy, Matplotlib, Pillow 
-See requirements.txt for all dependencies
+- See requirements.txt for all dependencies
 
 ## Setup
 
