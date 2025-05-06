@@ -29,7 +29,7 @@ Download the cats and dogs dataset from Kaggle and organize it as follows:
 ## Usage
 
 1. First, train the model (if not already trained): python train.py 
-    This creates the catAndDog_BinaryClassifier.keras file.
+ - This creates the catAndDog_BinaryClassifier.keras file.
 
 2. Run the classifier: python classifier.py
 
