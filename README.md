@@ -45,7 +45,7 @@ Download the cats and dogs dataset from Kaggle and organize it as follows:
 ## Testing
 
 Run the automated tests to verify the classifier works correctly: 
-    - python -m unittest
+- python -m unittest
     
 ## Project Structure
  - classifier.py - Main script for classifying images 
