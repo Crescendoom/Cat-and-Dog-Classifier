@@ -23,13 +23,13 @@ See requirements.txt for all dependencies
 
 Download the cats and dogs dataset from Kaggle and organize it as follows:
 Dataset/
----training_set/
-------cats/      # ~4,000 cat images
-------dogs/      # ~4,000 dog images
----validation_set/
-------cats/      # ~1,000 cat images
-------dogs/      # ~1,000 dog images
-
+  training_set/
+    cats/      # ~4,000 cat images
+    dogs/      # ~4,000 dog images
+  validation_set/
+    cats/      # ~1,000 cat images
+    dogs/      # ~1,000 dog images
+    
 ## Usage
 
 1. First, train the model (if not already trained): python train.py 
