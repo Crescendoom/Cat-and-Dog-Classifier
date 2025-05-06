@@ -48,11 +48,11 @@ Run the automated tests to verify the classifier works correctly:
     python -m unittest 
     
 ## Project Structure
-classifier.py - Main script for classifying images 
-train.py - Script for training the model
-test_classifier.py - Unit tests
-requirements.txt - Python dependencies
-catAndDog_BinaryClassifier.keras - Pre-trained model file
+ - classifier.py - Main script for classifying images 
+ - train.py - Script for training the model
+ - test_classifier.py - Unit tests
+ - requirements.txt - Python dependencies
+ - catAndDog_BinaryClassifier.keras - Pre-trained model file
 
 ##
 I need help on turning this into an exe file. lol
