@@ -23,7 +23,7 @@ A deep learning model that classifies images as either cats or dogs using Tensor
 
 ## Dataset 
 
-Download the cats and dogs dataset from Kaggle and organize it as follows:
+Download the cats and dogs dataset from Kaggle https://www.kaggle.com/code/robikscube/working-with-image-data-in-python/input, and organize it as follows:
 - Dataset/
     - training_set/
         - cats/      ~4,000 cat images
