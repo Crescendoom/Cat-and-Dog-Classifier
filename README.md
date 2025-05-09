@@ -54,6 +54,8 @@ Run the automated tests to verify the classifier works correctly:
  - requirements.txt - Python dependencies
  - catAndDog_BinaryClassifier.keras - Pre-trained model file
 
+## Acknowledgement 
+Project Idead from Rob Mulla https://youtu.be/kSqxn6zGE0c?si=GkTxVZJoowRXr2yL
+
 ## Future Work
 Create an executable file for easier distribution
-
