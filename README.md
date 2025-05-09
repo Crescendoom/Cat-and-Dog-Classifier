@@ -55,7 +55,7 @@ Run the automated tests to verify the classifier works correctly:
  - catAndDog_BinaryClassifier.keras - Pre-trained model file
 
 ## Acknowledgement 
-Project Idea from Rob Mulla https://youtu.be/kSqxn6zGE0c?si=GkTxVZJoowRXr2yL
+Project idea from Rob Mulla https://youtu.be/kSqxn6zGE0c?si=GkTxVZJoowRXr2yL
 
 ## Future Work
 Create an executable file or web application for easier distribution
