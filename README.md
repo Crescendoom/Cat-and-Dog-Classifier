@@ -48,7 +48,8 @@ Run the automated tests to verify the classifier works correctly:
 - python -m unittest
     
 ## Project Structure
- - classifier.py - Main script for classifying images 
+ - main.py - Main script for classifying images in web use
+ - classifier.py - Main script for classifying images in desktop use
  - train.py - Script for training the model
  - test_classifier.py - Unit tests
  - requirements.txt - Python dependencies
@@ -56,6 +57,3 @@ Run the automated tests to verify the classifier works correctly:
 
 ## Acknowledgement 
 Project idea from Rob Mulla https://youtu.be/kSqxn6zGE0c?si=GkTxVZJoowRXr2yL
-
-## Future Work
-Create an executable file or web application for easier distribution
