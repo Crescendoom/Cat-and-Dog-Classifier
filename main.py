@@ -3,7 +3,6 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from PIL import Image
-import io
 from tensorflow.keras.models import load_model # type: ignore
 
 st.set_page_config(page_title="Cat and Dog Classifier", layout="wide")
@@ -38,7 +37,7 @@ def main():
     if uploaded_file is not None:
         # Display uploaded image
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Image", use_container_width=True)
+        st.image(image, caption="Uploaded Image", use_column_width=True)
         st.write("")
         
         # Process image for prediction

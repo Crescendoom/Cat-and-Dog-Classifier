@@ -3,9 +3,9 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tkinter import filedialog, Tk
-from tensorflow.keras.models import load_model # type: ignore
+from tensorflow import keras
 
-model = load_model("catAndDog_BinaryClassifier.keras")
+model = tf.keras.models.load_model("catAndDog_BinaryClassifier.keras")
 target_size = (224, 224)
 
 def predict_image():
