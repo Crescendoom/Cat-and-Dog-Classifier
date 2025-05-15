@@ -57,3 +57,6 @@ Run the automated tests to verify the classifier works correctly:
 
 ## Acknowledgement 
 Project idea from Rob Mulla https://youtu.be/kSqxn6zGE0c?si=GkTxVZJoowRXr2yL
+
+## Streamlit app URL
+https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/
