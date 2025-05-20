@@ -2,6 +2,8 @@
 
 A deep learning model that classifies images as either cats or dogs using TensorFlow and MobileNetV2.
 
+Try it here - https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/
+
 ## Requirements
 
 - Python 3.10
@@ -57,6 +59,3 @@ Run the automated tests to verify the classifier works correctly:
 
 ## Acknowledgement 
 Project idea from Rob Mulla https://youtu.be/kSqxn6zGE0c?si=GkTxVZJoowRXr2yL
-
-## Web App URL
-Streamlit App link - https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/
