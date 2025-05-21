@@ -16,21 +16,21 @@ def main():
     
     # Sidebar
     st.sidebar.header("About")
-    st.sidebar.info("This app uses a pre-trained deep learning model to classify images as cats or dogs.")
+    # Replace the two separate info boxes with this combined one
     st.sidebar.info("""
-                    **Framework:** TensorFlow  
-                    **Model:** MobileNetV2
+                    This app uses a pre-trained deep learning model to classify images as cats or dogs.
+                    - **Framework:** TensorFlow
+                    - **Model:** MobileNetV2
                     """)
-    
     st.sidebar.header("Creator")
     st.sidebar.write("**John Laurence Hernandez**")
-    st.sidebar.info("""
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-                        <a href="https://github.com/Crescendoom" target="_blank">
-                        <i class="fab fa-github" style="font-size: 24px; margin-right: 10px;"></i>
-                        GitHub Profile
-                        </a>
-                        """, unsafe_allow_html=True)
+    st.sidebar.markdown("""
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                    <a href="https://github.com/Crescendoom" target="_blank" style="color: white; text-decoration: none;">
+                    <i class="fab fa-github" style="font-size: 24px; margin-right: 10px; color: white;"></i>
+                    Crescendoom
+                    </a>
+                    """, unsafe_allow_html=True)
 
     # Load model
     model = load_classifier_model()
