@@ -2,9 +2,9 @@
 
 A deep learning model that classifies images as either cats or dogs using TensorFlow and MobileNetV2.
 
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/)
-[![Try the App](https://img.shields.io/badge/Try_the_App-Cat_and_Dog_Classifier-blue?style=for-the-badge&logo=streamlit)](https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/)
+<a href="https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/" target="_blank">
+  <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App">
+</a>
 
 ## Requirements
 
