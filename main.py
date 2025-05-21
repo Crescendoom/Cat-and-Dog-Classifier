@@ -24,15 +24,13 @@ def main():
     
     st.sidebar.header("Creator")
     st.sidebar.write("**John Laurence Hernandez**")
-    github_logo = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-    st.sidebar.markdown(
-    f'<a href="https://github.com/Crescendoom" target="_blank">'
-    f'<img src="{github_logo}" width="30">'
-    f'</a> '
-    f'<span style="vertical-align: middle; margin-left: 5px;">'
-    f'<a href="https://github.com/Crescendoom" target="_blank">GitHub</a></span>',
-    unsafe_allow_html=True
-)
+    st.sidebar.markdown("""
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                        <a href="https://github.com/Crescendoom" target="_blank">
+                        <i class="fab fa-github" style="font-size: 24px; margin-right: 10px;"></i>
+                        GitHub Profile
+                        </a>
+                        """, unsafe_allow_html=True)
 
     # Load model
     model = load_classifier_model()
