@@ -24,7 +24,7 @@ def main():
     
     st.sidebar.header("Creator")
     st.sidebar.write("**John Laurence Hernandez**")
-    st.sidebar.markdown("""
+    st.sidebar.info("""
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
                         <a href="https://github.com/Crescendoom" target="_blank">
                         <i class="fab fa-github" style="font-size: 24px; margin-right: 10px;"></i>
