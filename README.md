@@ -2,8 +2,10 @@
 
 A deep learning model that classifies images as either cats or dogs using TensorFlow and MobileNetV2.
 
-Try it here - https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/
-
+Check it out here - https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/)
+[![Try the App](https://img.shields.io/badge/Try_the_App-Cat_and_Dog_Classifier-blue?style=for-the-badge&logo=streamlit)](https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/)
+### 🐱🐶 [Try the Cat and Dog Classifier!](https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.app/) 🐱🐶
 ## Requirements
 
 - Python 3.10
@@ -21,7 +23,7 @@ Try it here - https://cat-and-dog-classifier-d5qqukhnle8rqmdsvrjqud.streamlit.ap
     - Linux/Mac: source .venv/bin/activate
 4. Install dependencies: 
     - pip install -r requirements.txt
-5. Download the dataset (instructions below)
+5. Download the dataset with instructions below (if you want to train a model yourself)
 
 ## Dataset 
 
@@ -36,7 +38,7 @@ Download the cats and dogs dataset from Kaggle https://www.kaggle.com/code/robik
 
 ## Usage
 
-1. First, train the model (if not already trained): python train.py 
+1. First, train the model (if not already trained): python train.py (uncomment the lines needed)
     - This creates the catAndDog_BinaryClassifier.keras file.
 
 2. Run the classifier: 
