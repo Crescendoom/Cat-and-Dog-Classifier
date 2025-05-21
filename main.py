@@ -6,7 +6,6 @@ from PIL import Image
 from tensorflow.keras.models import load_model # type: ignore
 
 st.set_page_config(page_title="Cat and Dog Classifier", layout="wide")
-
 @st.cache_resource
 def load_classifier_model():
     return load_model("catAndDog_BinaryClassifier.keras")
@@ -24,10 +23,16 @@ def main():
                     """)
     
     st.sidebar.header("Creator")
-    st.sidebar.info("""
-                    **John Laurence Hernandez**  
-                    [GitHub](https://github.com/Crescendoom)
-                    """)
+    st.sidebar.write("**John Laurence Hernandez**")
+    github_logo = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+    st.sidebar.markdown(
+    f'<a href="https://github.com/Crescendoom" target="_blank">'
+    f'<img src="{github_logo}" width="30">'
+    f'</a> '
+    f'<span style="vertical-align: middle; margin-left: 5px;">'
+    f'<a href="https://github.com/Crescendoom" target="_blank">GitHub</a></span>',
+    unsafe_allow_html=True
+)
 
     # Load model
     model = load_classifier_model()
@@ -43,30 +48,23 @@ def main():
     
     # File uploader
     uploaded_file = st.file_uploader("Choose an image to upload.", type=["jpg", "jpeg", "png"])
-    
     # Process uploaded file
     if uploaded_file is not None:
-        # Display uploaded image
         image = Image.open(uploaded_file)
         st.image(image, caption="Uploaded Image", use_column_width=True)
         st.write("")
         
-        # Process image for prediction
         with st.spinner("Classifying..."):
-            # Resize and preprocess
             target_size = (224, 224)
             img = image.resize(target_size)
             img_array = tf.keras.utils.img_to_array(img)
             img_array = np.expand_dims(img_array, axis=0) / 255.0
             
-            # Make prediction
             prediction = model.predict(img_array, verbose=0)
             confidence = prediction[0][0]
             
-            # Display results
             col1, col2 = st.columns(2)
             
-            # Determine label and confidence
             if confidence > 0.5:
                 label = "Dog"
                 dog_percentage = confidence * 100
